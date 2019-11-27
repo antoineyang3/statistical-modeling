@@ -1,4 +1,4 @@
-# statistical-modeling
+# statistics
 
 This repository groups two small projects I have worked on in statistical modeling.
 
