@@ -8,6 +8,7 @@ Using the Hill estimator, we estimate the parameter of the Frechet Law that appr
 
 Using Pick over Threshold method, we estimate the survival function of the distribution of negative relative variations of Apple's quotation above a tunable threshold. Using maximum likelihood, we estimate numerically the parameters of the general Pareto distribution that models the exceedences. We verify that the tail-parameter is close to the one we obtained using Hill estimator, and that the estimated survival function is close to the empirical survival function. Finally, we use the estimated survival function to provide meaningful interpretations : 4.7% of the negative relative variations of Apple's share are above 5.06%.
 
+
 The second one (notebook time_series.ipynb) is about time series. We want to understand how time series could help predicting rainfall in a given place (Melbourne in this study). We propose to decompose the serie into trend, seasonality (of 365 days) and residual. The seasonality can be verified observing a peak at about 365 looking at the autocorrelation of the original serie. A Dickey-Fuller test allows us to verify the stationarity of the residuals. Looking at the autocorrelation of residuals, we propose two different models : MA(3) and AR(12). 
 
 We then have to verify these models. Normality tests (Kolmogorov-Smirnov) are not successful, while significativity tests and Box Pierce tests of absence of correlation are successful for both models. The AIC and BIC tests shows the superiority of the AR(12) model, despite high computational cost. 
